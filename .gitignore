@@ -1,11 +1,21 @@
-# Ignore everything in the repo
-/*
+# Node
+node_modules/
 
-# Except the .gitignore itself
-!.gitignore
+# Next.js
+.next/
+out/
+dist/
 
-# Except README files
-!README.md
-!README
-!readme.md
-!readme
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
