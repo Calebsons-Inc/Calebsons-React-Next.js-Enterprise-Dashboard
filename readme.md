@@ -1,39 +1,30 @@
 # Calebsons React/Next.js — Enterprise Dashboard
 
 ## Overview
-A real-time enterprise dashboard with server actions, WebSockets, and a modular UI system.
+A modern multi-screen operations console with demo company data: revenue KPIs, analytics, customers, orders, team, and settings.
 
 ## Tech Stack
-- Next.js 14
+- Next.js (App Router)
 - React
-- ShadCN UI
-- WebSockets
 - TypeScript
+- Tailwind CSS + ShadCN UI primitives
+- Server Actions
 
-## Features
-- Real-time charts
-- Role-based UI
-- Server actions
-- Responsive layout
-- Modular components
-
-## Architecture
-```mermaid
-flowchart TD
-    C[Browser - Next.js] --> API[Next.js Server Actions]
-    API --> DB[Operational DB]
-    API --> WS[WebSocket Stream]
-    WS --> C
-    DEPLOY[Vercel Hosting] -.-> API
-```
+## Screens
+- Overview — KPIs (server action), revenue chart, channel mix, sortable recent activity
+- Analytics — conversion metrics and regional performance
+- Customers — account directory with plans and health
+- Orders — commercial pipeline and order status
+- Team — people directory
+- Settings — workspace profile and notification toggles
 
 ## Setup
-    npm install
-    npm run dev
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Deployment
 - Vercel
-
-## Roadmap
-- Add analytics engine
-- Add multi-tenant dashboards
